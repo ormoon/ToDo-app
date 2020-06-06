@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <style>
+      .success {
+        background-color: green;
+        width: 100%;
+        color: white;
+        text-align: center;
+        margin: 10px;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .error {
+        background-color: red;
+        width: 100%;
+        color: white;
+        text-align: center;
+        margin: 10px;
+        border-radius: 5px;
+        padding: 5px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">ToDo App</h1>
+      <form id="main-form">
+        <input type="text" id="taskToAdd" class="form-control" />
+        <center>
+          <button type="submit" id="btn-submit" class="btn btn-danger mt-5">
+            Add Task
+          </button>
+        </center>
+      </form>
+      <table class="mt-5 table table-warning table-hover text-center">
+        <thead class="table-info">
+          <tr>
+            <th>Task</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="task-list"></tbody>
+      </table>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
